@@ -4,35 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farkle</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
-        <!-- PLayer score section -->
-        <h2>Player 1</h1>
-            <h3 id="p-one-turn-pts">Turn:</h3>
-            <h3 id="p-one-score">Score:</h3>
-        <h2>Player 2</h2>
-            <h3 id="p-two-turn-pts">Turn:</h3>
-            <h3 id="p-two-score">Score:</h3>
+        <div class="flex">
+            <!-- PLayer score section -->
+            <section id="scores">
+                <h2>Player 1</h2>
+                    <h3 id="p-one-turn-pts">Turn: 0</h3>
+                    <h3 id="p-one-score">Score: 0</h3>
+                <h2>Player 2</h2>
+                    <h3 id="p-two-turn-pts">Turn: 0</h3>
+                    <h3 id="p-two-score">Score: 0</h3>
+            </section>
+            <!-- Roll/Bank btns -->
+            <section id="play-section">
+                <button id="roll-btn">Roll</button>
+                <button id="bank-btn">Bank</button>
+            </section>
 
-        <!-- Roll/Bank btns -->
-        <button id="roll-btn">Roll</button>
-        <button id="bank-btn">Bank</button>
-
-        <!-- Scoring combos -->
-         <p>1: 100</p>
-         <p>5: 50</p>
-         <p>3x1: 1,000</p>
-         <p>3x2: 200</p>
-         <p>3x3: 300</p>
-         <p>3x4: 400</p>
-         <p>3x5: 500</p>
-         <p>3x6: 600</p>
-         <p>Straight 1-5: 500</p>
-         <p>Straight 2-6: 750</p>
-         <p>Straight 1-6: 1500</p>
-         <p>Four of a kind: Points double with each additional die beyond 3 e.g. 4x4: 800, 5x4: 1600</p>
-         <button id="quit-btn">Quit</button>
+            <!-- Scoring combos -->
+            <aside id="score-combos">
+                <p>1: 100</p>
+                <p>5: 50</p>
+                <p>3x1: 1,000</p>
+                <p>3x2: 200</p>
+                <p>3x3: 300</p>
+                <p>3x4: 400</p>
+                <p>3x5: 500</p>
+                <p>3x6: 600</p>
+                <p>Straight 1-5: 500</p>
+                <p>Straight 2-6: 750</p>
+                <p>Straight 1-6: 1500</p>
+                <p>Four of a kind: Points double with each additional die beyond 3 e.g. 4x4: 800, 5x4: 1600</p>
+                <button id="quit-btn">Quit</button>
+            </aside>
+        </div>
     </main>
     
 </body>
